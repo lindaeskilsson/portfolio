@@ -1,10 +1,11 @@
-import "./App.css";
+import "./CSS/App.css"
+
 
 function App() {
   return (
     <main className="hero">
       <div className="hero-content">
-        <span className="eyebrow">Portfolio</span>
+        <p className="eyebrow">Portfolio</p>
         <h1>LINDA ESKILSSON</h1>
         <p className="subtitle">
           Software Developer in the making  🚀
