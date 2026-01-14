@@ -1,30 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Zen+Kurenaido&display=swap');
+
 .contact {
-  min-height: 100vh;
-  padding: 4rem 2rem;
+  min-height: 100vh;              /* HEL SIDA */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center;        /* vertikalt centrerad */
+  align-items: center;            /* horisontellt centrerad */
   text-align: center;
+  padding: 80px 20px;             /* luft + navbar-säker */
 }
 
 .contact h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  color: #f47c1a;
+  font-family: "Chango", sans-serif;
+  margin-bottom: 20px;
 }
 
 .contact p {
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 20px;
+  color: #f47c1a;
   max-width: 600px;
-  margin: 0 auto 2rem;
   line-height: 1.6;
-}
-
-.contact-links {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
+  margin-bottom: 32px;
 }
 
 .contact-links a {
+  position: relative;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 20px;
+  color: #f47c1a;
   text-decoration: none;
-  font-weight: 600;
+  padding: 10px 30px 4px;
+}
+
+.contact-links a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #f47c1a;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.contact-links a:hover::after {
+  width: 100%;
 }
