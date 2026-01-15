@@ -1,4 +1,4 @@
-import React from "react";
+//todo: sticky navbar to follow you through the site
 
 export default function Navbar() {
   return (

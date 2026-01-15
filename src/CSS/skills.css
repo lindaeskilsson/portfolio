@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Climate+Crisis:YEAR@1979&family=Zen+Kurenaido&display=swap');
+
+.skills {
+  background: #fffdf7; /* varmvit */
+  padding: 90px 18px;
+}
+
+.skills-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.skills h2 {
+ font-family: "Chango", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  font-style: normal;
+  color:#f47c1a;
+  margin-bottom: 10px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 14px;
+  max-width: 760px;
+  margin: 0 auto 46px auto;
+}
+
+/* korten */
+.skill-card {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 16px 12px;
+
+  display: grid;
+  place-items: center;
+  gap: 10px;
+
+  /* superdiskret "lyft" utan skugga */
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.skill-card__icon {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.skill-card__label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: 0.02em;
+}
+
+/* hover: orange accent, ingen tung skugga */
+.skill-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(244, 124, 26, 0.55);
+  background: rgba(244, 124, 26, 0.05);
+}
+
+/* mobil */
+@media (max-width: 480px) {
+  .skills {
+    padding: 70px 14px;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+  }
+}
+
+.skill-card__icon {
+  font-size: 30px;
+  line-height: 1;
+  color: #f47c1a;
+}
+
+.skill-card__icon--fallback {
+  font-size: 26px;
+  opacity: 0.55;
+}

@@ -2,10 +2,18 @@ import "./CSS/App.css";
 import "./CSS/nav.css"
 import "./CSS/contact.css"
 import "./CSS/curvedloop.css"
+import "./CSS/skills.css"
+import "./CSS/about.css"
+
+
+
 
 import CurvedLoop from './components/CurvedLoop';
 import Navbar from "./components/navbar";
 import Contact from "./components/contact";
+import Skills from "./components/skills";
+import AboutPage from "./components/about";
+
 
 function App() {
   return (
@@ -24,12 +32,6 @@ function App() {
     className="curved-text"
   />
 </div>
-
-
-
-
-{/*
-          <h1>LINDA ESKILSSON</h1>*/}
           <p className="subtitle">
             Software Developer in the making 🚀
           </p>
@@ -37,7 +39,8 @@ function App() {
 
         </div>
       </main>
-
+<AboutPage />
+<Skills />
       <Contact />
     </>
   );

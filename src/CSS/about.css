@@ -1,0 +1,262 @@
+/* =========================
+   ABOUT PAGE (LIGHT THEME)
+   ========================= */
+
+:root {
+  /* accents */
+  --workAccent: #f47c1a; /* jobb */
+  --eduAccent: #f47c1a;  /* utbildning */
+
+  /* surfaces */
+  --bg: #fff7ef;         /* ljus varm bakgrund */
+  --panel: #ffffff;      /* standardkort */
+  --panelEdu: #f3f0ff;   /* studier-kort (annan bakgrund) */
+
+  /* borders + text */
+  --border: rgba(10, 10, 14, 0.10);
+  --text: #141418;
+  --muted: rgba(20, 20, 24, 0.70);
+}
+
+.aboutPage {
+  padding: 96px 20px;
+  background: #fffdf7;
+  color: var(--text);
+}
+
+.aboutPage-inner {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* ====== ABOUT HEADER ====== */
+
+.aboutHeader {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.aboutTitle {
+  font-size: clamp(34px, 5vw, 56px);
+  margin: 0;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
+.aboutTitle::after {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 4px;
+  margin: 12px auto 0;
+  border-radius: 999px;
+  background: var(--workAccent);
+  opacity: 0.95;
+}
+
+.aboutText {
+  margin: 18px auto 0;
+  max-width: 78ch;
+  line-height: 1.75;
+  font-size: 16px;
+  color: #000000;
+}
+
+.aboutButtons {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.aboutBtn:hover {
+  transform: translateY(-1px);
+  background: rgba(10, 10, 14, 0.06);
+}
+
+.aboutBtn.ghost {
+  background: transparent;
+}
+
+/* ====== LEGEND ====== */
+
+.timelineLegend {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 8px 0 22px;
+}
+
+.tag {
+  font-size: 12px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(10, 10, 14, 0.10);
+  background: rgba(10, 10, 14, 0.04);
+  color: rgba(20, 20, 24, 0.78);
+  font-weight: 800;
+}
+
+.tag.work {
+  box-shadow: inset 0 0 0 1px rgba(244, 124, 26, 0.35);
+}
+
+.tag.edu {
+  box-shadow: inset 0 0 0 1px rgba(122, 92, 255, 0.35);
+}
+
+/* =========================
+   INFOGRAPHIC TIMELINE
+   ========================= */
+
+.infTimeline {
+  padding-bottom: 56px; /* whitespace i botten */
+}
+
+.infTimeline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 820px;
+  display: grid;
+  gap: 14px;
+}
+
+/* row layout: spine + content */
+.infTimeline-item {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+/* spine */
+.infTimeline-spine {
+  position: relative;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  padding-top: 6px;
+}
+
+/* vertical line */
+.infTimeline-spine::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: -14px;
+  width: 3px;
+  border-radius: 999px;
+  background: rgba(20, 20, 24, 0.14);
+}
+
+/* node bubble (bigger) */
+.infTimeline-node {
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 24px rgba(10, 10, 14, 0.06);
+  z-index: 2;
+}
+
+.infTimeline-icon {
+  font-size: 24px; /* bigger icon */
+}
+
+/* content card */
+.infTimeline-content {
+  background: #f47c1a;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 12px 14px;
+  box-shadow: 0 10px 28px rgba(10, 10, 14, 0.06);
+  color: #fffdf7;
+}
+
+/* different background for studies */
+.infTimeline-item.edu .infTimeline-content {
+  background: #f47c1a;
+  border-color: rgba(122, 92, 255, 0.22);
+}
+
+/* optional: warm tint for work */
+.infTimeline-item.work .infTimeline-content {
+  background: #f47c1a92;
+  border-color: rgba(244, 124, 26, 0.18);
+}
+
+/* meta row */
+.infTimeline-meta {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.infTimeline-year {
+  font-size: 12px;
+  font-weight: 900;
+  color: f47c1a;
+  letter-spacing: 0.03em;
+}
+
+
+.infTimeline-badge.work {
+  box-shadow: inset 0 0 0 1px rgba(244, 124, 26, 0.35);
+}
+
+.infTimeline-badge.edu {
+  box-shadow: inset 0 0 0 1px rgba(122, 92, 255, 0.35);
+}
+
+/* content text */
+.infTimeline-title {
+  margin: 0;
+  font-weight: 900;
+  color: #fffdf7;
+}
+
+.infTimeline-company {
+  margin: 6px 0 0;
+  font-weight: 800;
+  color: #fffdf7;
+}
+
+.infTimeline-text {
+  margin: 8px 0 0;
+  color: #fffdf7;
+  line-height: 1.55;
+  font-size: 16px;
+}
+
+.infTimeline-bullets {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: #fffdf7;
+  line-height: 1.5;
+  font-size: 13.5px;
+  display: grid;
+  gap: 4px;
+}
+
+/* mobile tweaks */
+@media (max-width: 720px) {
+  .infTimeline-item {
+    grid-template-columns: 64px 1fr;
+    gap: 12px;
+  }
+
+  .infTimeline-node {
+    width: 46px;
+    height: 46px;
+  }
+
+  .infTimeline-icon {
+    font-size: 22px;
+  }
+}

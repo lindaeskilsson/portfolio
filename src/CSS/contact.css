@@ -11,7 +11,7 @@
 }
 
 .contact h2 {
-  color: #f47c1a;
+  color: #fffdf7;
   font-family: "Chango", sans-serif;
   margin-bottom: 20px;
 }
@@ -19,7 +19,7 @@
 .contact p {
   font-family: "Zen Kurenaido", sans-serif;
   font-size: 20px;
-  color: #f47c1a;
+  color: #fffdf7;
   max-width: 600px;
   line-height: 1.6;
   margin-bottom: 32px;
@@ -29,7 +29,7 @@
   position: relative;
   font-family: "Zen Kurenaido", sans-serif;
   font-size: 20px;
-  color: #f47c1a;
+  color: #fffdf7;
   text-decoration: none;
   padding: 10px 30px 4px;
 }
@@ -41,7 +41,7 @@
   bottom: 0;
   width: 0;
   height: 2px;
-  background: #f47c1a;
+  background: #fffdf7;
   transform: translateX(-50%);
   transition: width 0.3s ease;
 }
