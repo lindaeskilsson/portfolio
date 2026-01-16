@@ -1,4 +1,4 @@
-//todo: sticky navbar to follow you through the site
+import cvPdf from "../assets/Linda-Eskilsson-CV.pdf";
 
 export default function Navbar() {
   return (
@@ -9,8 +9,8 @@ export default function Navbar() {
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li>
-          <a href="/public/CV.docx" download>
+       <li>
+          <a href={cvPdf} download="Linda-Eskilsson-CV.pdf">
             Download CV
           </a>
         </li>
