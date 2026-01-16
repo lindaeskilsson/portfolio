@@ -7,7 +7,8 @@
   justify-content: center;        /* vertikalt centrerad */
   align-items: center;            /* horisontellt centrerad */
   text-align: center;
-  padding: 80px 20px;             /* luft + navbar-säker */
+  padding: 80px 20px;     
+  background-color: #f47c1a;        /* luft + navbar-säker */
 }
 
 .contact h2 {

@@ -2,7 +2,7 @@
 
 /* Wrapper */
 .navbar {
-  position: absolute;   /* flyter ovanpå hero */
+  position: fixed;   /* flyter ovanpå hero */
   top: 32px;
   left: 0;
   width: 100%;
@@ -16,14 +16,14 @@
   justify-content: center;
   gap: 36px;            /* luft mellan orden */
   margin: 0;
-  padding: 0;
+  padding: 20;
 }
 
 /* Länkar */
 .nav-links a {
   text-decoration: none;
   letter-spacing: 0.5px;
-  color: #8a3f00;       /* mörk orange/brun */
+  color: #622d02;       /* mörk orange/brun */
   transition: opacity 0.2s ease;
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: bold;
