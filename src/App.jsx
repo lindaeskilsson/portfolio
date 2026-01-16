@@ -1,7 +1,7 @@
 import "./CSS/App.css";
 import "./CSS/nav.css"
 import "./CSS/contact.css"
-import "./CSS/Curvedloop.css"
+import "./CSS/CurvedLoop.css"
 import "./CSS/skills.css"
 import "./CSS/about.css"
 import './CSS/AnimatedList.css';
