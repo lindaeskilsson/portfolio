@@ -8,7 +8,6 @@ import './CSS/AnimatedList.css';
 import './CSS/project.css';
 
 
-
 import CurvedLoop from './components/CurvedLoop';
 import Navbar from "./components/navbar";
 import Contact from "./components/contact";
