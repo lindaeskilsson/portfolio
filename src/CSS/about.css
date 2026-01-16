@@ -1,11 +1,13 @@
+
+
 /* =========================
    ABOUT PAGE (LIGHT THEME)
    ========================= */
 
 :root {
   /* accents */
-  --workAccent: #f47c1a; /* jobb */
-  --eduAccent: #f47c1a;  /* utbildning */
+  --workAccent: #f47c1a8d; /* jobb */
+  --eduAccent: #f47c1ace;  /* utbildning */
 
   /* surfaces */
   --bg: #fff7ef;         /* ljus varm bakgrund */
@@ -36,11 +38,12 @@
   margin-bottom: 28px;
 }
 
+
 .aboutTitle {
   font-size: clamp(34px, 5vw, 56px);
   margin: 0;
   letter-spacing: 0.02em;
-  color: var(--text);
+  color: #f47c1a;
 }
 
 .aboutTitle::after {
@@ -180,13 +183,13 @@
 
 /* different background for studies */
 .infTimeline-item.edu .infTimeline-content {
-  background: #f47c1a;
+  background: #f47c1ad1;
   border-color: rgba(122, 92, 255, 0.22);
 }
 
 /* optional: warm tint for work */
 .infTimeline-item.work .infTimeline-content {
-  background: #f47c1a92;
+  background: #f0802599;
   border-color: rgba(244, 124, 26, 0.18);
 }
 
@@ -211,7 +214,7 @@
 }
 
 .infTimeline-badge.edu {
-  box-shadow: inset 0 0 0 1px rgba(122, 92, 255, 0.35);
+  box-shadow: inset 0 0 0 1px rgba(227, 99, 13, 0.809);
 }
 
 /* content text */
@@ -232,16 +235,6 @@
   color: #fffdf7;
   line-height: 1.55;
   font-size: 16px;
-}
-
-.infTimeline-bullets {
-  margin: 10px 0 0;
-  padding-left: 18px;
-  color: #fffdf7;
-  line-height: 1.5;
-  font-size: 13.5px;
-  display: grid;
-  gap: 4px;
 }
 
 /* mobile tweaks */

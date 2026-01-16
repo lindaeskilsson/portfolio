@@ -8,7 +8,7 @@ const timelineItems = [
     title: "Servitris / receptionist / lokalvård",
     company: "Funäsdalen Berg & Hotell",
     text:
-      "Var en närvarande och positiv person i teamet för att skapa en varm gästupplevelse. Tog ansvar i skiftet och ställde upp för kollegor → bättre flyt och lugnare tempo.",
+      "Var en närvarande och positiv person i teamet för att skapa en varm gästupplevelse. Tog ansvar under skiften och ställde upp för mina kollegor, bättre flöde och arbetsmiljö för alla.",
   },
   {
     type: "work",
@@ -16,7 +16,7 @@ const timelineItems = [
     title: "Serveringspersonal",
     company: "Copperhill Mountain Lodge",
     text:
-      "Levererade service med detaljfokus för att skapa en jämn och proffsig upplevelse. Hoppade in där det behövdes → smidigare flöden under högt tryck.",
+      "Levererade service med detaljfokus för att skapa en jämn och proffsig upplevelse. Hoppade in där det behövdes och bidrog till smidigare flöden under högt tryck.",
   },
   {
     type: "work",
@@ -24,7 +24,7 @@ const timelineItems = [
     title: "Platschef & webbadministratör",
     company: "JumpYard Åre",
     text:
-      "Skapade tydligare rutiner och planering för att få stabilt arbetstempo. Gjorde kundinfo enklare att hitta och förstå → färre frågor och snabbare service.",
+      "Skapade tydligare rutiner och planering för att få stabilt arbetstempo och en god arbetsmiljö, samt en fantastisk plats för våra gäster. Gjorde kundinfo på webben enklare att hitta och förstå, för att jobba mot färre frågor och snabbare service.",
   },
   {
     type: "work",
@@ -32,7 +32,7 @@ const timelineItems = [
     title: "Extraresurs",
     company: "Fjellservice",
     text:
-      "Stöttar i drift och tar det som behövs för att avlasta teamet → lugnare arbetsflöde och bättre flyt.",
+      "Stöttar i drift och tar det som behövs för att avlasta i teamet",
   },
   {
     type: "work",
@@ -40,7 +40,7 @@ const timelineItems = [
     title: "Extraresurs",
     company: "PostNord",
     text:
-      "Bidrar med struktur och pålitlighet för att hålla tempo och ordning även när belastningen är hög.",
+      "Bidrar med struktur och pålitlighet för att hålla uppe ett tempo och ordning även när belastningen är hög.",
   },
 
   // UTBILDNING
@@ -49,27 +49,33 @@ const timelineItems = [
     year: "Tidigare",
     title: "Samhälle, medier, kommunikation & information",
     company: "Wargentin",
-    bullets: ["Kommunikation", "Medieproduktion", "Analys & presentation"],
+    text: ["Mediernas roll i samhället, medieteknik, budskapsförmedling, intresseväckande innehåll, praktiskt skapande, fotografering, film/video, radioproduktion."],
   },
   {
     type: "edu",
     year: "2020 – 2023",
-    title: "Webbredaktör (Informationsarkitekt & Frontend)",
+    title: "Webbredaktör (Informationsarkitekt & Frontendutvecklare)",
     company: "Högskolan Borås",
-    bullets: [
-      "HTML, CSS, JavaScript, React",
-      "SEO & innehållsstrategi",
-      "CMS & publicering",
-      "Testproduktion / kvalitet",
-      "Medieproduktion",
+    text: [
+      "HTML, CSS, JavaScript, React, content management (CMS), informationsarkitektur, UX, tillgänglighet, grafisk form/layout, bildbehandling, animering/multimedia, informationsjuridik, forskningsmetod.",
     ],
   },
   {
     type: "edu",
     year: "Pågående (examen 2027)",
-    title: "Fullstackutveckling",
+    title: "Javautveckling",
     company: "IT-Högskolan",
-    bullets: ["Java, Spring", "SQL", "REST API & testning", "DevOps-grunder"],
+    text: [
+  "Java (OOP), backend och frontend, webbutveckling, databashantering ",
+  <b key="more">and more to come!</b>,
+]
+  },
+  {
+    type: "edu",
+    year: "Pågående",
+    title: "Fristående kurser",
+    company: "Linköpings universitet",
+    text: ["Grundläggande AI, Grundläggande cybersäkerhet"],
   },
 ];
 
@@ -82,9 +88,11 @@ export default function AboutPage() {
           <h2 className="aboutTitle" id="aboutPage-title">About Me</h2>
 
           <p className="aboutText">
-            Jag är Linda — en UX-minded developer som gillar när saker blir tydliga,
-            lättanvända och snygga utan att bli röriga. Jag trivs med struktur,
-            små förbättringar och att bygga upplevelser som känns självklara.
+          
+            Hej! Jag heter Linda 👋 Jag gillar att skapa användarvänliga och friktionsfria system där design, innehåll och teknik samverkar så att allt känns enkelt och självklart. 
+            Jag är varm, nyfiken och strukturerad, och trivs i samarbeten där man testar, förbättrar och bygger lösningar som gör vardagen smidigare för andra. 
+            Med en bakgrund inom webbredaktörskap, informationsarkitektur och UX bygger jag just nu vidare på min utvecklarresa med fokus på Java och backend. 
+            
           </p>
 
           
