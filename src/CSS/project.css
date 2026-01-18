@@ -28,3 +28,7 @@
   color: rgba(248, 248, 248, 0.85);
   text-align: center;
 }
+
+.scroll-list-container {
+  background: #f47c1a;
+}
