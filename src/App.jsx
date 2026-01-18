@@ -4,7 +4,7 @@ import "./CSS/contact.css"
 import "./CSS/CurvedLoop.css"
 import "./CSS/skills.css"
 import "./CSS/about.css"
-import './CSS/AnimatedList.css';
+
 import './CSS/project.css';
 
 
@@ -13,7 +13,6 @@ import Navbar from "./components/navbar";
 import Contact from "./components/contact";
 import Skills from "./components/skills";
 import AboutPage from "./components/about";
-import AnimatedList from "./components/AnimatedList";
 import ProjectsSection from "./components/projects";
 
 const items = [
@@ -51,14 +50,8 @@ function App() {
         </div>
       </main>
 <AboutPage />
-  <ProjectsSection />
-<AnimatedList
-  items={items}
-  onItemSelect={(item, index) => console.log(item, index)}
-  showGradients={true}
-  enableArrowNavigation={true}
-  displayScrollbar={true}
-/>
+
+<ProjectsSection items={items} />
 
 <Skills />
       <Contact />
