@@ -23,6 +23,7 @@ const items = [
   { label: "Java-laboration (FX & Network)", url: "https://github.com/ithsjava25/java-fx-and-network-lindaeskilsson" },
   { label: "Projekt: Library System (JPA grupp 6-D)", url: "https://github.com/ithsjava25/project-jpa-grupp-6-d" },
   { label: "Portfolio website", url: "https://github.com/lindaeskilsson/portfolio" },
+  { label: "Mini Server med windows95 look", url: "https://github.com/lindaeskilsson/mini-server" },
 ];
 
 

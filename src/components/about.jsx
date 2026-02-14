@@ -1,74 +1,20 @@
 import React from "react";
 
 const timelineItems = [
-  // JOBB
-  {
-    type: "work",
-    year: "2016 – 2021",
-    title: "Servitris / receptionist / lokalvård",
-    company: "Funäsdalen Berg & Hotell",
-    text:
-      "Var en närvarande och positiv person i teamet för att skapa en varm gästupplevelse. Tog ansvar under skiften och ställde upp för mina kollegor, bättre flöde och arbetsmiljö för alla.",
-  },
-  {
-    type: "work",
-    year: "2021 – 2023",
-    title: "Serveringspersonal",
-    company: "Copperhill Mountain Lodge",
-    text:
-      "Levererade service med detaljfokus för att skapa en jämn och proffsig upplevelse. Hoppade in där det behövdes och bidrog till smidigare flöden under högt tryck.",
-  },
-  {
-    type: "work",
-    year: "2023 – 2025",
-    title: "Platschef & webbadministratör",
-    company: "JumpYard Åre",
-    text:
-      "Skapade tydligare rutiner och planering för att få stabilt arbetstempo och en god arbetsmiljö, samt en fantastisk plats för våra gäster. Gjorde kundinfo på webben enklare att hitta och förstå, för att jobba mot färre frågor och snabbare service.",
-  },
-  {
-    type: "work",
-    year: "Pågående",
-    title: "Extraresurs",
-    company: "Fjellservice",
-    text:
-      "Stöttar i drift och tar det som behövs för att avlasta i teamet",
-  },
-  {
-    type: "work",
-    year: "Pågående",
-    title: "Extraresurs",
-    company: "PostNord",
-    text:
-      "Bidrar med struktur och pålitlighet för att hålla uppe ett tempo och ordning även när belastningen är hög.",
-  },
 
-  // UTBILDNING
-  {
-    type: "edu",
-    year: "Tidigare",
-    title: "Samhälle, medier, kommunikation & information",
-    company: "Wargentin",
-    text: ["Mediernas roll i samhället, medieteknik, budskapsförmedling, intresseväckande innehåll, praktiskt skapande, fotografering, film/video, radioproduktion."],
-  },
-  {
-    type: "edu",
-    year: "2020 – 2023",
-    title: "Webbredaktör (Informationsarkitekt & Frontendutvecklare)",
-    company: "Högskolan Borås",
-    text: [
-      "HTML, CSS, JavaScript, React, content management (CMS), informationsarkitektur, UX, tillgänglighet, grafisk form/layout, bildbehandling, animering/multimedia, informationsjuridik, forskningsmetod.",
-    ],
-  },
+  // =========================
+  // UTBILDNING (nyast först)
+  // =========================
+
   {
     type: "edu",
     year: "Pågående (examen 2027)",
     title: "Javautveckling",
     company: "IT-Högskolan",
     text: [
-  "Java (OOP), backend och frontend, webbutveckling, databashantering ",
-  <b key="more">and more to come!</b>,
-]
+      "Java (OOP), backend och frontend, webbutveckling, databashantering ",
+      <b key="more">and more to come!</b>,
+    ],
   },
   {
     type: "edu",
@@ -77,7 +23,72 @@ const timelineItems = [
     company: "Linköpings universitet",
     text: ["Grundläggande AI, Grundläggande cybersäkerhet"],
   },
+  {
+    type: "edu",
+    year: "2020 – 2023",
+    title: "Webbredaktör (Informationsarkitekt & Frontendutvecklare)",
+    company: "Högskolan Borås",
+    text: [
+      "HTML, CSS, JavaScript, React, CMS, informationsarkitektur, UX, tillgänglighet, grafisk form/layout, bildbehandling, animering/multimedia, informationsjuridik, forskningsmetod.",
+    ],
+  },
+  {
+    type: "edu",
+    year: "Tidigare",
+    title: "Samhälle, medier, kommunikation & information",
+    company: "Wargentin",
+    text: [
+      "Mediernas roll i samhället, medieteknik, budskapsförmedling, innehållsskapande, foto, film, radio.",
+    ],
+  },
+
+
+  // =========================
+  // ARBETE (nyast först)
+  // =========================
+
+  {
+    type: "work",
+    year: "Pågående",
+    title: "Extraresurs",
+    company: "PostNord",
+    text:
+      "Bidrar med struktur och pålitlighet för att hålla tempo och ordning även vid hög belastning.",
+  },
+  {
+    type: "work",
+    year: "Pågående",
+    title: "Extraresurs",
+    company: "Fjellservice",
+    text:
+      "Stöttar i drift och tar det som behövs för att avlasta i teamet.",
+  },
+  {
+    type: "work",
+    year: "2023 – 2025",
+    title: "Platschef & webbadministratör",
+    company: "JumpYard Åre",
+    text:
+      "Skapade tydligare rutiner och planering för stabilt arbetstempo och bättre arbetsmiljö. Gjorde kundinformation på webben enklare att hitta för snabbare service.",
+  },
+  {
+    type: "work",
+    year: "2021 – 2023",
+    title: "Serveringspersonal",
+    company: "Copperhill Mountain Lodge",
+    text:
+      "Service med detaljfokus och flexibilitet under högt tryck för smidigare flöden.",
+  },
+  {
+    type: "work",
+    year: "2016 – 2021",
+    title: "Servitris / receptionist / lokalvård",
+    company: "Funäsdalen Berg & Hotell",
+    text:
+      "Bidrog till en varm gästupplevelse, tog ansvar i skift och förbättrade teamets arbetsflöde.",
+  },
 ];
+
 
 export default function AboutPage() {
   return (
