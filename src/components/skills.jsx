@@ -10,20 +10,20 @@ SiJetbrains,
   SiGit,
   SiGithub,
   SiDocker,
+  SiJunit5,
 } from "react-icons/si";
 
 import {
   HiOutlineUserGroup,
-  HiOutlineChatBubbleLeftRight,
   HiOutlineLightBulb,
-  HiOutlineArrowsRightLeft,
   HiOutlineClock,
-  HiOutlineHeart,
   HiOutlineWrenchScrewdriver,
   HiOutlineSparkles,
   HiOutlineShieldCheck,
-  HiOutlineFaceSmile,
 } from "react-icons/hi2";
+
+import { FaNetworkWired } from "react-icons/fa";
+import { TbApi } from "react-icons/tb";
 
 const tech = [
   { name: "HTML", Icon: SiHtml5 },
@@ -33,6 +33,9 @@ const tech = [
   { name: "Java", Icon: null }, // ❌ ingen ikon
   { name: "SQL (MySQL)", Icon: SiMysql },
   { name: "NoSQL (MongoDB)", Icon: SiMongodb },
+  { name: "Sockets / TCP", Icon: FaNetworkWired },
+  { name: "HTTP & REST", Icon: TbApi },
+  { name: "Unit Testing (JUnit)", Icon: SiJunit5 },
 ];
 
 const tools = [
@@ -41,19 +44,16 @@ const tools = [
   { name: "Git", Icon: SiGit },
   { name: "GitHub", Icon: SiGithub },
   { name: "Docker", Icon: SiDocker },
+  { name: "TDD Workflow", Icon: SiJunit5 },
 ];
 
 const softskills = [
   { name: "Team player", Icon: HiOutlineUserGroup },
-  { name: "Good listener", Icon: HiOutlineChatBubbleLeftRight },
   { name: "Problem-solver", Icon: HiOutlineWrenchScrewdriver },
-  { name: "Adaptable", Icon: HiOutlineArrowsRightLeft },
   { name: "Structured", Icon: HiOutlineClock },
   { name: "Creative", Icon: HiOutlineLightBulb },
-  { name: "Warm & professional", Icon: HiOutlineHeart },
   { name: "Positive energy", Icon: HiOutlineSparkles },
   { name: "Calm under pressure", Icon: HiOutlineShieldCheck },
-  { name: "Kind and funny", Icon: HiOutlineFaceSmile },
 ];
 
 
