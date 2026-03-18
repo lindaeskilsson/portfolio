@@ -34,14 +34,14 @@ const timelineItems = [
     year: "Pågående",
     title: "Extraresurs",
     company: "PostNord",
-    text: "Bidrar med struktur och pålitlighet för att hålla tempo och ordning även vid hög belastning.",
+    text: "Vikarierande distrubitör, ansvarar för att sortera och leverera paket i tid, samt ge snabb och vänlig service till kunderna.",
   },
   {
     type: "work",
     year: "Pågående",
     title: "Extraresurs",
     company: "Fjellservice",
-    text: "Stöttar i drift och tar det som behövs för att avlasta i teamet.",
+    text: "Stöttar i drift och tar det som behövs för att avlasta för teamet.",
   },
   {
     type: "work",
@@ -80,10 +80,12 @@ export default function AboutPage() {
           <h2 className="aboutTitle" id="aboutPage-title">About Me</h2>
 
           <p className="aboutText">
-            Hej! Jag heter Linda 👋 Jag gillar att skapa användarvänliga och friktionsfria system där design, innehåll och teknik samverkar så att allt känns enkelt och självklart.
-            Jag är varm, nyfiken och strukturerad, och trivs i samarbeten där man testar, förbättrar och bygger lösningar som gör vardagen smidigare för andra.
-            Med en bakgrund inom webbredaktörskap, informationsarkitektur och UX bygger jag just nu vidare på min utvecklarresa med fokus på Java och backend.
-          </p>
+  Hej! Jag heter Linda 👋 Jag är en varm och strukturerad utvecklare under utbildning med ett starkt öga för användarvänlighet.
+  Min bakgrund inom UX och informationsarkitektur ger mig en unik förmåga att se helheten,
+  medan min satsning på Java och backend ger mig kraften att bygga lösningarna från grunden.
+  Jag kombinerar gärna min förståelse för design med tekniskt hantverk och trivs som bäst i öppna team där vi bygger smart, användarvänlig och kul teknik tillsammans! Har du några som helst frågor till mig,{" "}
+  <a href="#contact" className="aboutLink"> hör av dig! 🧡 </a>
+</p>
         </header>
 
         <div className="infTimeline" aria-label="Timeline">

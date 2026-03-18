@@ -1,72 +1,83 @@
-
+// 100% kompatibla ikoner från react-icons
 import {
-  SiHtml5,
-  SiCss3,
+  SiSpring,
   SiReact,
   SiJavascript,
+  SiHtml5,
   SiMysql,
   SiMongodb,
-SiJetbrains,
   SiGit,
   SiGithub,
   SiDocker,
-  SiJunit5,
 } from "react-icons/si";
 
-import {
-  HiOutlineUserGroup,
-  HiOutlineLightBulb,
-  HiOutlineClock,
-  HiOutlineWrenchScrewdriver,
-  HiOutlineSparkles,
-  HiOutlineShieldCheck,
-} from "react-icons/hi2";
+import { FaDatabase, FaCogs, FaPuzzlePiece, FaUser, FaUsers, FaClock, FaTools, FaStar } from "react-icons/fa";
 
-import { FaNetworkWired } from "react-icons/fa";
-import { TbApi } from "react-icons/tb";
+import { VscCode } from "react-icons/vsc";
 
 const tech = [
-  { name: "HTML", Icon: SiHtml5 },
-  { name: "CSS", Icon: SiCss3 },
+  { name: "Java", Icon: null },
+  { name: "Spring Boot", Icon: SiSpring },
+  { name: "REST APIs", Icon: FaCogs },
+  { name: "HTTP", Icon: FaCogs },
+  { name: "JPA / Hibernate", Icon: FaDatabase },
+
   { name: "React", Icon: SiReact },
   { name: "JavaScript", Icon: SiJavascript },
-  { name: "Java", Icon: null }, // ❌ ingen ikon
+  { name: "HTML", Icon: SiHtml5 },
+  { name: "CSS", Icon: null },
+
   { name: "SQL (MySQL)", Icon: SiMysql },
-  { name: "NoSQL (MongoDB)", Icon: SiMongodb },
-  { name: "Sockets / TCP", Icon: FaNetworkWired },
-  { name: "HTTP & REST", Icon: TbApi },
-  { name: "Unit Testing (JUnit)", Icon: SiJunit5 },
+  { name: "MongoDB", Icon: SiMongodb },
 ];
 
 const tools = [
-  { name: "VS Code", Icon: null },
-  { name: "IntelliJ", Icon: SiJetbrains }, // ❌ ingen ikon
   { name: "Git", Icon: SiGit },
   { name: "GitHub", Icon: SiGithub },
   { name: "Docker", Icon: SiDocker },
-  { name: "TDD Workflow", Icon: SiJunit5 },
+  { name: "Maven", Icon: FaCogs },
+  { name: "IntelliJ IDEA", Icon: FaCogs },
+  { name: "VS Code", Icon: VscCode },
+];
+
+const concepts = [
+  { name: "DTO & Mapper", Icon: FaCogs },
+  { name: "CRUD", Icon: FaDatabase },
+  { name: "Layered Architecture", Icon: FaCogs },
+  { name: "Separation of Concerns", Icon: FaPuzzlePiece },
+  { name: "TDD (basics)", Icon: FaCogs },
 ];
 
 const softskills = [
-  { name: "Team player", Icon: HiOutlineUserGroup },
-  { name: "Problem-solver", Icon: HiOutlineWrenchScrewdriver },
-  { name: "Structured", Icon: HiOutlineClock },
-  { name: "Positive energy", Icon: HiOutlineSparkles },
-  { name: "Calm under pressure", Icon: HiOutlineShieldCheck },
+  { name: "User-focused", Icon: FaUser },
+  { name: "Team player", Icon: FaUsers },
+  { name: "Structured", Icon: FaClock },
+  { name: "Problem solver", Icon: FaTools },
+  { name: "Curious & learning", Icon: FaStar },
 ];
 
+function Card({ Icon, name, color = "var(--orange)" }) {
+  const hasValidIcon = typeof Icon === "function";
 
-function Card({ Icon, name }) {
   return (
     <div className="skill-card">
-      {Icon ? (
-        <Icon className="skill-card__icon" aria-hidden="true" />
+      {hasValidIcon ? (
+        <Icon
+          className="skill-card__icon"
+          aria-hidden="true"
+          size={22}
+          style={{ color, flexShrink: 0 }}
+        />
       ) : (
-        <div className="skill-card__icon skill-card__icon--fallback" aria-hidden="true">
-          {/* enkel fallback-symbol */}
+        <div
+          className="skill-card__icon skill-card__icon--fallback"
+          aria-hidden="true"
+          style={{ color }}
+        >
           ●
         </div>
       )}
+
       <div className="skill-card__label">{name}</div>
     </div>
   );
@@ -89,14 +100,21 @@ export default function Skills() {
             <Card key={s.name} Icon={s.Icon} name={s.name} />
           ))}
         </div>
-         <h2>Soft skills</h2>
+
+        <h2>Concepts</h2>
+        <div className="skills-grid">
+          {concepts.map((s) => (
+            <Card key={s.name} Icon={s.Icon} name={s.name} />
+          ))}
+        </div>
+
+        <h2>Soft skills</h2>
         <div className="skills-grid">
           {softskills.map((s) => (
             <Card key={s.name} Icon={s.Icon} name={s.name} />
           ))}
         </div>
       </div>
-      
     </section>
   );
 }

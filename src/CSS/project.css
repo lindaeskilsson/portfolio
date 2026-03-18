@@ -159,3 +159,10 @@
     line-height: 1.35;
   }
 }
+
+.projects-subtitle {
+  text-align: center;
+  color: var(--cream);
+  font-weight: bold;
+  font-size: 26px;
+}
