@@ -1,82 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Chango&family=Climate+Crisis:YEAR@1979&family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Zen+Kurenaido&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #f47c1a;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Färgpalett - Enhetliga variabler */
+  --orange: #f47c1a;
+  --orange-soft: #f47c1a8d;
+  --cream: #fffdf7;
+  --brown: #622d02;
+  --text-dark: #141418;
+  --white: #ffffff;
+  
+  /* Typsnitt */
+  --font-accent: "Chango", sans-serif;
+  --font-main: "Zen Kurenaido", sans-serif;
 }
 
-a {
-  font-weight: 500;
-  color: #64ff67;
-  text-decoration: inherit;
+/* Grundinställningar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-a:hover {
-  color: #535bf2;
-}
+
+html { scroll-behavior: smooth; }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  background: var(--cream);
+  color: var(--text-dark);
+  font-family: var(--font-main);
+  line-height: 1.6;
+}
+
+/* Gemensamma rubriker för hela sajten */
+h1, h2 {
+  font-family: var(--font-accent);
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: clamp(3rem, 8vw, 5rem); line-height: 1.1; }
+h2 { font-size: 24px; color: var(--orange); }
+
+/* --- HERO (Tidigare App.css) --- */
+/* index.css */
+.hero {
   min-height: 100vh;
+  display: flex; /* Viktigt! */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--orange); /* Din orangea färg */
+  position: relative;
+  z-index: 1;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.hero-content {
+  position: relative;
+  z-index: 2; /* Se till att innehållet hamnar ovanpå bakgrunden */
+  color: var(--cream); /* Se till att texten inte är orange på orange */
 }
 
-h2{font-family: "Chango", sans-serif;
+.eyebrow {
   font-weight: 700;
   font-size: 24px;
-  font-style: normal;
-  color:#f47c1a;
-  margin-bottom: 10px;}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  padding: 1.5rem 0;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.subtitle {
+  font-weight: 400;
+  font-size: clamp(18px, 4vw, 24px);
+  padding-top: 1.5rem;
+  color: var(--cream);
 }
-
-

@@ -139,7 +139,9 @@ const AnimatedList = ({
   target="_blank"
   rel="noreferrer"
 >
-  <p className="item-text">{typeof item === "string" ? item : item.label}</p>
+  <p className="item-text">
+  {typeof item === "string" ? item : item.label}
+</p>
 </a>
             </div>
           </AnimatedItem>

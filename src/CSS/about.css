@@ -1,28 +1,6 @@
-
-
-/* =========================
-   ABOUT PAGE (LIGHT THEME)
-   ========================= */
-
-:root {
-  /* accents */
-  --workAccent: #f47c1a8d; /* jobb */
-  --eduAccent: #f47c1ace;  /* utbildning */
-
-  /* surfaces */
-  --bg: #fff7ef;         /* ljus varm bakgrund */
-  --panel: #ffffff;      /* standardkort */
-  --panelEdu: #f3f0ff;   /* studier-kort (annan bakgrund) */
-
-  /* borders + text */
-  --border: rgba(10, 10, 14, 0.10);
-  --text: #141418;
-  --muted: rgba(20, 20, 24, 0.70);
-}
-
 .aboutPage {
   padding: 96px 20px;
-  background: #fffdf7;
+  background: var(--cream);
   color: var(--text);
 }
 
@@ -31,19 +9,16 @@
   margin: 0 auto;
 }
 
-/* ====== ABOUT HEADER ====== */
-
 .aboutHeader {
   text-align: center;
   margin-bottom: 28px;
 }
 
-
 .aboutTitle {
   font-size: clamp(34px, 5vw, 56px);
   margin: 0;
   letter-spacing: 0.02em;
-  color: #f47c1a;
+  color: var(--orange);
 }
 
 .aboutTitle::after {
@@ -53,7 +28,7 @@
   height: 4px;
   margin: 12px auto 0;
   border-radius: 999px;
-  background: var(--workAccent);
+  background: var(--orange-soft);
   opacity: 0.95;
 }
 
@@ -82,20 +57,19 @@
   background: transparent;
 }
 
-/* ====== LEGEND ====== */
-
 .timelineLegend {
   display: flex;
   gap: 10px;
   justify-content: center;
   margin: 8px 0 22px;
+  flex-wrap: wrap;
 }
 
 .tag {
   font-size: 12px;
   padding: 7px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(10, 10, 14, 0.10);
+  border: 1px solid rgba(10, 10, 14, 0.1);
   background: rgba(10, 10, 14, 0.04);
   color: rgba(20, 20, 24, 0.78);
   font-weight: 800;
@@ -109,12 +83,8 @@
   box-shadow: inset 0 0 0 1px rgba(122, 92, 255, 0.35);
 }
 
-/* =========================
-   INFOGRAPHIC TIMELINE
-   ========================= */
-
 .infTimeline {
-  padding-bottom: 56px; /* whitespace i botten */
+  padding-bottom: 56px;
 }
 
 .infTimeline-list {
@@ -126,7 +96,6 @@
   gap: 14px;
 }
 
-/* row layout: spine + content */
 .infTimeline-item {
   display: grid;
   grid-template-columns: 76px 1fr;
@@ -134,7 +103,6 @@
   align-items: start;
 }
 
-/* spine */
 .infTimeline-spine {
   position: relative;
   height: 100%;
@@ -143,7 +111,6 @@
   padding-top: 6px;
 }
 
-/* vertical line */
 .infTimeline-spine::before {
   content: "";
   position: absolute;
@@ -154,7 +121,6 @@
   background: rgba(20, 20, 24, 0.14);
 }
 
-/* node bubble (bigger) */
 .infTimeline-node {
   width: 52px;
   height: 52px;
@@ -168,46 +134,42 @@
 }
 
 .infTimeline-icon {
-  font-size: 24px; /* bigger icon */
+  font-size: 24px;
 }
 
-/* content card */
 .infTimeline-content {
-  background: #f47c1a;
+  background: var(--orange);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 12px 14px;
   box-shadow: 0 10px 28px rgba(10, 10, 14, 0.06);
-  color: #fffdf7;
+  color: var(--cream);
 }
 
-/* different background for studies */
 .infTimeline-item.edu .infTimeline-content {
   background: #f47c1ad1;
   border-color: rgba(122, 92, 255, 0.22);
 }
 
-/* optional: warm tint for work */
 .infTimeline-item.work .infTimeline-content {
   background: #f0802599;
   border-color: rgba(244, 124, 26, 0.18);
 }
 
-/* meta row */
 .infTimeline-meta {
   display: flex;
   gap: 10px;
   align-items: center;
   margin-bottom: 8px;
+  flex-wrap: wrap;
 }
 
 .infTimeline-year {
   font-size: 12px;
   font-weight: 900;
-  color: f47c1a;
+  color: var(--cream);
   letter-spacing: 0.03em;
 }
-
 
 .infTimeline-badge.work {
   box-shadow: inset 0 0 0 1px rgba(244, 124, 26, 0.35);
@@ -217,27 +179,25 @@
   box-shadow: inset 0 0 0 1px rgba(227, 99, 13, 0.809);
 }
 
-/* content text */
 .infTimeline-title {
   margin: 0;
   font-weight: 900;
-  color: #fffdf7;
+  color: var(--cream);
 }
 
 .infTimeline-company {
   margin: 6px 0 0;
   font-weight: 800;
-  color: #fffdf7;
+  color: var(--cream);
 }
 
 .infTimeline-text {
   margin: 8px 0 0;
-  color: #fffdf7;
+  color: var(--cream);
   line-height: 1.55;
   font-size: 16px;
 }
 
-/* mobile tweaks */
 @media (max-width: 720px) {
   .infTimeline-item {
     grid-template-columns: 64px 1fr;
@@ -252,4 +212,52 @@
   .infTimeline-icon {
     font-size: 22px;
   }
+}
+
+.infTimeline-toggle {
+  all: unset;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.infTimeline-toggle:hover {
+  opacity: 0.96;
+}
+
+.infTimeline-chevron {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--cream);
+  line-height: 1;
+}
+
+.infTimeline-panel {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.infTimeline-content {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.infTimeline-item.open .infTimeline-content {
+  transform: translateY(-1px);
+}
+
+.projects-group {
+  margin-top: 2.5rem;
+}
+
+.projects-subtitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 1rem;
+  text-align: center;
 }

@@ -51,7 +51,6 @@ const softskills = [
   { name: "Team player", Icon: HiOutlineUserGroup },
   { name: "Problem-solver", Icon: HiOutlineWrenchScrewdriver },
   { name: "Structured", Icon: HiOutlineClock },
-  { name: "Creative", Icon: HiOutlineLightBulb },
   { name: "Positive energy", Icon: HiOutlineSparkles },
   { name: "Calm under pressure", Icon: HiOutlineShieldCheck },
 ];
