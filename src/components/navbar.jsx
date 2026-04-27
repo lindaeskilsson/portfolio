@@ -1,5 +1,5 @@
 import { useState } from "react";
-import cvPdf from "../assets/Linda-Eskilsson-cv.docx.pdf";
+import cvPdf from "../assets/Linda-Eskilsson-LIA-CV.pdf";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
