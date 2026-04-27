@@ -9,26 +9,35 @@ import {
   SiGit,
   SiGithub,
   SiDocker,
+  SiTailwindcss,
+  SiCss,
+  SiIntellijidea,
+  SiPostman,
+  SiFigma,
 } from "react-icons/si";
 
-import { FaDatabase, FaCogs, FaPuzzlePiece, FaUser, FaUsers, FaClock, FaTools, FaStar } from "react-icons/fa";
+import { FaDatabase, FaCogs, FaUser, FaUsers, FaClock, FaTools, FaStar, FaShieldAlt, FaNetworkWired, FaCoffee } from "react-icons/fa";
 
 import { VscCode } from "react-icons/vsc";
 
 const tech = [
-  { name: "Java", Icon: null },
+  { name: "Java", Icon: FaCoffee },
   { name: "Spring Boot", Icon: SiSpring },
   { name: "REST APIs", Icon: FaCogs },
-  { name: "HTTP", Icon: FaCogs },
+  { name: "HTTP", Icon: FaNetworkWired },
   { name: "JPA / Hibernate", Icon: FaDatabase },
 
   { name: "React", Icon: SiReact },
+  { name: "Tailwind", Icon: SiTailwindcss },
   { name: "JavaScript", Icon: SiJavascript },
   { name: "HTML", Icon: SiHtml5 },
-  { name: "CSS", Icon: null },
+  { name: "CSS", Icon: SiCss },
 
   { name: "SQL (MySQL)", Icon: SiMysql },
   { name: "MongoDB", Icon: SiMongodb },
+
+  { name: "Spring Security/JWT", Icon: FaShieldAlt },
+
 ];
 
 const tools = [
@@ -36,17 +45,12 @@ const tools = [
   { name: "GitHub", Icon: SiGithub },
   { name: "Docker", Icon: SiDocker },
   { name: "Maven", Icon: FaCogs },
-  { name: "IntelliJ IDEA", Icon: FaCogs },
+  { name: "IntelliJ IDEA", Icon: SiIntellijidea },
   { name: "VS Code", Icon: VscCode },
+  { name: "Postman", Icon: SiPostman },
+  { name: "Figma", Icon: SiFigma },
 ];
 
-const concepts = [
-  { name: "DTO & Mapper", Icon: FaCogs },
-  { name: "CRUD", Icon: FaDatabase },
-  { name: "Layered Architecture", Icon: FaCogs },
-  { name: "Separation of Concerns", Icon: FaPuzzlePiece },
-  { name: "TDD (basics)", Icon: FaCogs },
-];
 
 const softskills = [
   { name: "User-focused", Icon: FaUser },
@@ -97,13 +101,6 @@ export default function Skills() {
         <h2>Tools & platforms</h2>
         <div className="skills-grid">
           {tools.map((s) => (
-            <Card key={s.name} Icon={s.Icon} name={s.name} />
-          ))}
-        </div>
-
-        <h2>Concepts</h2>
-        <div className="skills-grid">
-          {concepts.map((s) => (
             <Card key={s.name} Icon={s.Icon} name={s.name} />
           ))}
         </div>

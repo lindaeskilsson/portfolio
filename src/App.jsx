@@ -21,12 +21,13 @@ function App() {
     { label: "Projekt från Högskolan Borås", url: "https://github.com/lindaeskilsson/code-projects" },
     { label: "Databaslaboration (JDBC)", url: "https://github.com/ithsjava25/databas-jdbc-lindaeskilsson" },
     { label: "Databaslaboration (JavaFX Classroom)", url: "https://github.com/ithsjava25/ithsjava25-java-databas-jdbc-javafx-classrom" },
-    { label: "Java-laboration (Core)", url: "https://github.com/ithsjava25/java-core-lindaeskilsson" },
-    { label: "Java-laboration (FX & Network)", url: "https://github.com/ithsjava25/java-fx-and-network-lindaeskilsson" },
-    { label: "Projekt: Library System (JPA grupp 6-D)", url: "https://github.com/ithsjava25/project-jpa-grupp-6-d" },
+    { label: "Javalaboration (Core)", url: "https://github.com/ithsjava25/java-core-lindaeskilsson" },
+    { label: "Javalaboration (FX & Network)", url: "https://github.com/ithsjava25/java-fx-and-network-lindaeskilsson" },
+    { label: "Projekt: Bibliotekssystem", url: "https://github.com/ithsjava25/project-jpa-grupp-6-d" },
     { label: "Portfolio website", url: "https://github.com/lindaeskilsson/portfolio" },
     { label: "Mini Server med windows95 look", url: "https://github.com/lindaeskilsson/mini-server" },
     { label: "TrailTracker", url: "https://github.com/lindaeskilsson/trailtracker" },
+    { label: "VET1177", url: "https://github.com/ithsjava25/project-backend-org-random-coders" },
   ];
 
   const liveWebsites = [
@@ -42,7 +43,7 @@ function App() {
         <div className="hero-content">
           <h1>Linda Eskilsson</h1>
           <p className="subtitle">
-            Software developer in the making
+            Full-stack developer with a UX eye
           </p>
 
           <div className="curved-wrap">
